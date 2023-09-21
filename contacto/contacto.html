@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <title>Amasando Ideas</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./styles.css">        
+    </head>
+
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html"><img src="../imagenes/Logo principal.png" alt="Home logo" class="imagenLogo"/></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav navegacion">
+
+            <div class="opcion1">
+              <a class="nav-link itemsNavbar" aria-current="page" href="../index.html">Home</a>
+              <a class="nav-link itemsNavbar" href="../quienes_somos/quienes_somos.html">Quienes somos</a>
+              <a class="nav-link itemsNavbar" href="../galeria/galeria.html">Galería</a>
+              <a class="nav-link itemsNavbar" href="./contacto.html">Contacto</a>
+            </div>
+
+            <div class="opcion2">
+              <a class="nav-link itemsNavbar" aria-current="page" href="#"><img src="../imagenes/wspblack.png" alt="Whatsapp logo" class="icons"/></a>
+              <a class="nav-link itemsNavbar" href="#"><img src="../imagenes/instblack.png" alt="Instagram logo" class="icons"/></a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <body>
+      <div class="contenedorPrincipal">      
+        <!-- <div class="contenedorLogoPrincipal">
+          <img src="Imagenes/Logo principal.png" alt="Logo" class="logoPrincipal"/>
+        </div> -->
+
+          <div class="container">
+
+            <div class="textosDeContacto">
+              <h2 class="tituloContacto">Contacto</h2>
+              <p class="textoDescripcion">Por consultas o encargos, completá el formulario a continuación y un miembro del equipo se contactará a la brevedad 😊</p>
+            </div>
+
+            <form class="formulario">
+              <div class="mb-3">
+                <label for="name" class="form-label">Nombre: </label>
+                <input type="text" class="form-control" id="name" required>
+              </div>
+
+              <div class="mb-3">
+                <label for="lastname" class="form-label">Apellido:</label>
+                <input type="text" class="form-control" id="lastname" required>
+              </div>
+
+              <div class="mb-3">
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" class="form-control" id="email" required>              
+              </div>
+
+              <div class="mb-3">
+                <label for="textarea" class="form-label">Mensaje:</label>
+                <textarea name="textarea" rows="5" cols="50" class="form-control" id="textarea"></textarea>             
+              </div>
+
+              <button type="submit" class="btn botonEnviar">Enviar</button>
+            </form>          
+          </div>
+
+          <footer class="footerEstilos">
+            <div class="footerOpciones">
+              <div class="opcionFooterBtnTxt">
+                <a class="nav-link optionsNav" aria-current="page" href="../index.html">Home</a>
+                <a class="nav-link optionsNav" href="../quienes_somos/quienes_somos.html">Quienes somos</a>
+                <a class="nav-link optionsNav" href="../galeria/galeria.html">Galería</a>
+                <a class="nav-link optionsNav" href="./contacto.html">Contacto</a>
+                <a class="nav-link" aria-current="page" href="#"><img src="../imagenes/wspwhite.png" alt="Whatsapp logo" class="icons2"/></a>
+                <a class="nav-link" href="#"><img src="../imagenes/isntwhite.png" alt="Instagram logo" class="icons2"/></a>
+              </div>
+            </div>
+          </footer>
+      </div>
+    </body>
+</html>
