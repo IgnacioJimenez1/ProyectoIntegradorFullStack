@@ -25,8 +25,9 @@
             </div>
 
             <div class="opcion2">
-              <a class="nav-link itemsNavbar" aria-current="page" href="#"><img src="../imagenes/wspblack.png" alt="Whatsapp logo" class="icons"/></a>
-              <a class="nav-link itemsNavbar" href="https://www.instagram.com/amasando.ideas/"><img src="../imagenes/instblack.png" alt="Instagram logo" class="icons"/></a>
+              <a class="nav-link itemsNavbar" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#">Ingresar</a>
+              <a class="nav-link itemsNavbar" aria-current="page" href="https://w.app/amasandoideas" target="_blank"><img src="../imagenes/wspblack.png" alt="Whatsapp logo" class="icons"/></a>
+              <a class="nav-link itemsNavbar" href="https://www.instagram.com/amasando.ideas/" target="_blank"><img src="../imagenes/instblack.png" alt="Instagram logo" class="icons"/></a>
             </div>
 
           </div>
@@ -102,11 +103,47 @@
                 <a class="nav-link optionsNav" href="./quienes_somos.html">Quienes somos</a>
                 <a class="nav-link optionsNav" href="../galeria/galeria.html">Galería</a>
                 <a class="nav-link optionsNav" href="../contacto/contacto.html">Contacto</a>
-                <a class="nav-link" aria-current="page" href="#"><img src="../imagenes/wspwhite.png" alt="Whatsapp logo" class="icons2"/></a>
+                <a class="nav-link" aria-current="page" href="https://w.app/amasandoideas" target="_blank"><img src="../imagenes/wspwhite.png" alt="Whatsapp logo" class="icons2"/></a>
                 <a class="nav-link" href="https://www.instagram.com/amasando.ideas/" target="_blank"><img src="../imagenes/isntwhite.png" alt="Instagram logo" class="icons2"/></a>
               </div>
             </div>
           </footer>
       </div>
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Inicio de Sesión</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="idE" class="form-label">Correo</label>
+                        <input type="email" class="form-control" id="idE"
+                        aria-describedby="idEH">
+                        <div id="idEH" class="form-text">Debe ser un correo válido.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1"
+                        class="form-label">Contraseña</label>
+                        <input type="password" class="form-control"
+                        id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input"
+                        id="exampleCheck1">
+                        <label class="form-check-label"
+                        for="exampleCheck1">Recordarme</label>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="submit" class="btn btn-secondary" data-bs-dismiss="modal">Ingresar</button>
+                      <p>ó Si querés crear tu nueva cuenta ingresá aquí</p>
+                      <br>
+                      <a type="button" class="btn botonEnviar" href="../registro/registro.html">Registrarme</a>
+                    </div>
+                </form>
+            </div>
     </body>
 </html>
