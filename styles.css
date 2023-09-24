@@ -147,6 +147,30 @@
   border: 1px solid black;  
 } */
 
+
+.contenedor-principal{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo-home{
+  margin-top: 90px;
+  width: 40rem;
+}
+
+.subtituloHome{
+  margin-top: -70px;
+}
+
+.descripHome{
+  margin: 20px;
+}
+
+.imgbarra{
+  margin-top: 20px;
+  width: 50rem;
+
 .botonEnviar{
   background-color: rgb(224, 206, 241);
 }
