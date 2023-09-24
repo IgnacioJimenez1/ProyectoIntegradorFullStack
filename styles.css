@@ -147,6 +147,7 @@
   border: 1px solid black;  
 } */
 
+
 .contenedor-principal{
   display: flex;
   flex-direction: column;
@@ -169,4 +170,12 @@
 .imgbarra{
   margin-top: 20px;
   width: 50rem;
+
+.botonEnviar{
+  background-color: rgb(224, 206, 241);
+}
+
+.botonEnviar:hover{
+  background-color: #262626;
+  color: white;
 }
