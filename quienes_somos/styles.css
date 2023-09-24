@@ -32,7 +32,6 @@
   display: flex;
 }
 
-
 .textosDeContacto{
   text-align: center;
   padding-top: 20px;
@@ -50,28 +49,6 @@
   font-size: 1.2rem;
   margin-bottom: 1.5rem;
 }
-
-
-
-
-.formulario{
-  border: 3px solid #262626;
-  padding: 2rem;
-  border-radius: 20px;
-  margin-bottom: 8rem;
-  background-color: white;
-}
-
-.botonEnviar{
-  background-color: rgb(224, 206, 241);
-}
-
-.botonEnviar:hover{
-  background-color: #262626;
-  color: white;
-}
-
-
 
 .icons{
   width: 2rem;

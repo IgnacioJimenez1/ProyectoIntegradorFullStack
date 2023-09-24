@@ -7,48 +7,46 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="./styles.css">        
     </head>
+    <body>
+      <!-- Barra de navegación -->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html"><img src="../imagenes/Logo principal.png" alt="Home logo" class="imagenLogo"/></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav navegacion">
 
-    <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="../index.html"><img src="../imagenes/Logo principal.png" alt="Home logo" class="imagenLogo"/></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav navegacion">
+              <div class="opcion1">
+                <a class="nav-link itemsNavbar" aria-current="page" href="../index.html">Home</a>
+                <a class="nav-link itemsNavbar" href="../contacto/contacto.html">Quienes somos</a>
+                <a class="nav-link itemsNavbar" href="../galeria/galeria.html">Galería</a>
+                <a class="nav-link itemsNavbar" href="../contacto/contacto.html">Contacto</a>
+              </div>
 
-            <div class="opcion1">
-              <a class="nav-link itemsNavbar" aria-current="page" href="../index.html">Home</a>
-              <a class="nav-link itemsNavbar" href="../contacto/contacto.html">Quienes somos</a>
-              <a class="nav-link itemsNavbar" href="../galeria/galeria.html">Galería</a>
-              <a class="nav-link itemsNavbar" href="../contacto/contacto.html">Contacto</a>
+              <div class="opcion2">
+                <a class="nav-link itemsNavbar" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#">Ingresar</a>
+                <a class="nav-link itemsNavbar" aria-current="page" href="https://w.app/amasandoideas" target="_blank"><img src="../imagenes/wspblack.png" alt="Whatsapp logo" class="icons"/></a>
+                <a class="nav-link itemsNavbar" href="https://www.instagram.com/amasando.ideas/" target="_blank"><img src="../imagenes/instblack.png" alt="Instagram logo" class="icons"/></a>
+              </div>
+
             </div>
-
-            <div class="opcion2">
-              <a class="nav-link itemsNavbar" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#">Ingresar</a>
-              <a class="nav-link itemsNavbar" aria-current="page" href="https://w.app/amasandoideas" target="_blank"><img src="../imagenes/wspblack.png" alt="Whatsapp logo" class="icons"/></a>
-              <a class="nav-link itemsNavbar" href="https://www.instagram.com/amasando.ideas/" target="_blank"><img src="../imagenes/instblack.png" alt="Instagram logo" class="icons"/></a>
-            </div>
-
           </div>
         </div>
-      </div>
-    </nav>
+      </nav>
 
-    <body>
-      <div class="contenedorPrincipal">      
-        <!-- <div class="contenedorLogoPrincipal">
-          <img src="Imagenes/Logo principal.png" alt="Logo" class="logoPrincipal"/>
-        </div> -->
+    
+      <section class="contenedorPrincipal">      
 
-          <div class="container">
+          <article class="container">
 
-            <div class="textosDeContacto">
+            <article class="textosDeContacto">
               <h2 class="tituloContacto">Quiénes somos?</h2>
               <p class="textoDescripcion">... Ó mejor dicho ¿Quién soy? ... </p>
-            </div>
+            </article>
 
-            <div class="accordion" p--4 id="accordionPanelsStayOpenExample">
+            <article class="accordion" p--4 id="accordionPanelsStayOpenExample">
               <div class="accordion-item">
                 <h2 class="accordion-header">
                   <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
@@ -84,65 +82,66 @@
                   </button>
                 </h2>
                 <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
-                  <div class="accordion-body">
-                    
+                  <div class="accordion-body">                    
                       A todas aquellas personas que compraron accesorios y a quienes me apoyaron durante todos éstos meses con likes, comentarios y menciones.
                       También quiero agradecer a mis colegas, ya que ellos me hicieron sentir bienvenida en éste mundo y me aompañan día a día.
                       Gracias por darme la oportunidad de seguir creciendo en éste bello proyecto!!
                   </div>
                 </div>
               </div>
-            </div>
-          </div>        
+            </article>
+          </article>        
           
-
+          <!-- Footer -->
           <footer class="footerEstilos">
-            <div class="footerOpciones">
-              <div class="opcionFooterBtnTxt">
+            <section class="footerOpciones">
+              <article class="opcionFooterBtnTxt">
                 <a class="nav-link optionsNav" aria-current="page" href="../index.html">Home</a>
                 <a class="nav-link optionsNav" href="./quienes_somos.html">Quienes somos</a>
                 <a class="nav-link optionsNav" href="../galeria/galeria.html">Galería</a>
                 <a class="nav-link optionsNav" href="../contacto/contacto.html">Contacto</a>
                 <a class="nav-link" aria-current="page" href="https://w.app/amasandoideas" target="_blank"><img src="../imagenes/wspwhite.png" alt="Whatsapp logo" class="icons2"/></a>
                 <a class="nav-link" href="https://www.instagram.com/amasando.ideas/" target="_blank"><img src="../imagenes/isntwhite.png" alt="Instagram logo" class="icons2"/></a>
-              </div>
-            </div>
+              </article>
+            </section>
           </footer>
-      </div>
+
+        </section>
+      
       <!-- Modal -->
       <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Inicio de Sesión</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <h5 class="modal-title" id="exampleModalLabel">Inicio de Sesión</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <form>
-                    <div class="mb-3">
-                        <label for="idE" class="form-label">Correo</label>
-                        <input type="email" class="form-control" id="idE"
+              <form>
+                  <div class="mb-3">
+                      <label for="idE" class="form-label">Correo</label>
+                      <input type="email" class="form-control" id="idE"
                         aria-describedby="idEH">
-                        <div id="idEH" class="form-text">Debe ser un correo válido.</div>
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleInputPassword1"
+                      <div id="idEH" class="form-text">Debe ser un correo válido.</div>
+                  </div>
+                  <div class="mb-3">
+                      <label for="exampleInputPassword1"
                         class="form-label">Contraseña</label>
-                        <input type="password" class="form-control"
+                      <input type="password" class="form-control"
                         id="exampleInputPassword1">
-                    </div>
-                    <div class="mb-3 form-check">
-                        <input type="checkbox" class="form-check-input"
+                  </div>
+                  <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input"
                         id="exampleCheck1">
-                        <label class="form-check-label"
+                      <label class="form-check-label"
                         for="exampleCheck1">Recordarme</label>
-                    </div>
-                    <div class="modal-footer">
-                      <button type="submit" class="btn btn-secondary" data-bs-dismiss="modal">Ingresar</button>
-                      <p>ó Si querés crear tu nueva cuenta ingresá aquí</p>
-                      <br>
-                      <a type="button" class="btn botonEnviar" href="../registro/registro.html">Registrarme</a>
-                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="submit" class="btn btn-secondary" data-bs-dismiss="modal">Ingresar</button>
+                    <p>ó Si querés crear tu nueva cuenta ingresá aquí</p>
+                    <br>
+                    <a type="button" class="btn botonEnviar" href="../registro/registro.html">Registrarme</a>
+                  </div>
                 </form>
             </div>
     </body>
