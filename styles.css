@@ -32,7 +32,6 @@
   display: flex;
 }
 
-
 .textosDeContacto{
   text-align: center;
   padding-top: 20px;
@@ -50,7 +49,6 @@
   font-size: 1.2rem;
   margin-bottom: 1.5rem;
 }
-
 
 .icons{
   width: 2rem;
@@ -114,40 +112,6 @@
   transition-property: color, background-color, border-color, box-shadow;
 }
 
-/* Responsive - Media Queries */
-
-@media only screen and (max-width: 992px) {  
-  .opcion1, .opcion2{
-    display: block;
-  }
-  .itemsNavbar {
-    padding-left: 10px;
-  }  
-  .itemsNavbar:hover{
-    background-color: rgba(255, 255, 255, 0.87);
-  }
-}
-
-
-/* Home */
-/* .contenedorCarousel{
-  border: 1px solid green;
-  width: 100% !important; 
-}
-
-.carousel-item{
-  border: 1px solid red;
-  width: 100% !important; 
-  height: 40rem;
-  display: flex;
-  background-size: cover;
-} */
-
-/* .imagenSlider{
-  border: 1px solid black;  
-} */
-
-
 .contenedor-principal{
   display: flex;
   flex-direction: column;
@@ -170,6 +134,7 @@
 .imgbarra{
   margin-top: 20px;
   width: 50rem;
+}
 
 .botonEnviar{
   background-color: rgb(224, 206, 241);
@@ -178,4 +143,18 @@
 .botonEnviar:hover{
   background-color: #262626;
   color: white;
+}
+
+/* Responsive - Media Queries */
+
+@media only screen and (max-width: 992px) {  
+  .opcion1, .opcion2{
+    display: block;
+  }
+  .itemsNavbar {
+    padding-left: 10px;
+  }  
+  .itemsNavbar:hover{
+    background-color: rgba(255, 255, 255, 0.87);
+  }
 }
