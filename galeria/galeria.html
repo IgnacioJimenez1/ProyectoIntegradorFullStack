@@ -188,32 +188,34 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <form>
-                  <div class="mb-3">
+              <form>
+                <div class="mb-3">
                     <label for="idEmail" class="form-label">Correo</label>
                     <input type="email" class="form-control" id="idEmail"
                     aria-describedby="idEH" maxlength="30" minlength="5">
                     <div id="idEH" class="form-text">Debe ser un correo válido.</div>
-                  </div>
-                  <div class="mb-3">
-                      <label for="idPass"
-                      class="form-label">Contraseña</label>
-                      <input type="password" class="form-control" id="idPass" maxlength="12" minlength="5" >
-                  </div>
-                    <div class="mb-3 form-check">
-                        <input type="checkbox" class="form-check-input"
-                        id="exampleCheck1">
-                        <label class="form-check-label"
-                        for="exampleCheck1">Recordarme</label>
-                    </div>
-                    <div class="modal-footer">
-                      <button type="submit" class="btn btn-secondary" data-bs-dismiss="modal">Ingresar</button>
-                      <p>ó Si querés crear tu nueva cuenta ingresá aquí</p>
-                      <br>
-                      <a type="button" class="btn botonEnviar" href="../registro/registro.html">Registrarme</a>
-                      
-                    </div>
-                </form>
+                </div>
+                <div class="mb-3">
+                    <label for="idPass"
+                    class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" id="idPass" maxlength="12" minlength="5" >
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input"
+                    id="exampleCheck1">
+                    <label class="form-check-label"
+                    for="exampleCheck1">Recordarme</label>
+                </div>
+                <div class="modal-footer">
+                  <a type="submit" class="btn btn-secondary" data-bs-dismiss="modal" id="btnIngresar" href="./index.html">Ingresar</a>
+                  <br>
+                  <p>Si querés crear tu nueva cuenta ingresá aquí</p>
+                  <br>
+                  <a type="button" class="btn botonEnviar" href="./registro/registro.html">Registrarme</a>                            
+                </div>
+              </form>
             </div>
+
+        <script src="../app.js"></script>
     </body>
 </html>

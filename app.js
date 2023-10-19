@@ -1,6 +1,4 @@
-const correoUsuario = document.getElementById('idEmail');
-const passUsuario = document.getElementById('idPass');
-const ingresarButton = document.getElementById('ingresarBoton');
+
 
 const buttonRegistrarme = document.getElementById('buttonRegistrarme');
 const nameRegistro = document.getElementById('nameRegistro');
@@ -25,27 +23,54 @@ let passGuardado = sessionStorage.getItem('passGuardado');
 
 
 // Guardando registro de usuario en local storage
-buttonRegistrarme.addEventListener('click', () => {    
-    sessionStorage.setItem('nameGuardado', nameRegistro.value);
-    sessionStorage.setItem('lastnameGuardado', lastnameRegistro.value);
-    sessionStorage.setItem('emailGuardado', emailRegistro.value);
-    sessionStorage.setItem('passGuardado', passRegistro.value);
-});
+// buttonRegistrarme.addEventListener('click', () => {    
+//     sessionStorage.setItem('nameGuardado', nameRegistro.value);
+//     sessionStorage.setItem('lastnameGuardado', lastnameRegistro.value);
+//     sessionStorage.setItem('emailGuardado', emailRegistro.value);
+//     sessionStorage.setItem('passGuardado', passRegistro.value);
+// });
 
 
-// Ingresar usuario
-const iniciarSesion = () => {
-    if (correoUsuario === emailGuardado && passUsuario === passGuardado) {
-        alert('felicitaciones, usuario correcto')
+// // Ingresar usuario
+// const iniciarSesion = () => {
+//     if (correoUsuario === emailGuardado && passUsuario === passGuardado) {
+//         alert('felicitaciones, usuario correcto')
+//     } else {
+//         alert('usuario o contraseña incorrecto')
+//     }
+// };
+
+// ingresarButton.addEventListener('click', () => {    
+//     alert('usuario ingresado')
+//     iniciarSesion()
+// });
+
+// LOGUIN
+// 1- Login. Se debe validar un usuario y contraseña (por ahora
+// hardcodear en variables los datos). Si el usuario ingresa
+// correctamente las credenciales, se deberá navegar a la
+// landing page.
+
+const correoUsuario = document.getElementById('idEmail');
+const passUsuario = document.getElementById('idPass');
+const btnIngresar = document.getElementById('btnIngresar');
+
+const correoGuardado = "juan@gmail.com"
+const passwordGuardado = "juan1234"
+
+const ingresarLoguin = () => {
+    if (correoGuardado === correoUsuario.value && passwordGuardado === passUsuario.value) {
+        alert('Usuario correcto')
+        window.location.href = "./index.html"
     } else {
-        alert('usuario o contraseña incorrecto')
+        alert('Usuario o contraseña erroneo, ingrese nuevamente')
     }
 };
 
-ingresarButton.addEventListener('click', () => {    
-    alert('usuario ingresado')
-    iniciarSesion()
+btnIngresar.addEventListener('click', () => {  
+    ingresarLoguin()
 });
+
 
 
 // Validación formulario de contacto
