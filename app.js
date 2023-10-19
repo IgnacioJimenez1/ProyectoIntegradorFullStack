@@ -1,10 +1,10 @@
 
 
-const buttonRegistrarme = document.getElementById('buttonRegistrarme');
+// const buttonRegistrarme = document.getElementById('buttonRegistrarme');
 const nameRegistro = document.getElementById('nameRegistro');
 const lastnameRegistro = document.getElementById('lastnameRegistro');
 const emailRegistro = document.getElementById('emailRegistro');
-const passRegistro = document.getElementById('passRegistro');
+// const passRegistro = document.getElementById('passRegistro');
 
 const usuarioIngresado = document.getElementById('usuarioIngresado');
 
@@ -46,14 +46,11 @@ let passGuardado = sessionStorage.getItem('passGuardado');
 // });
 
 // LOGUIN
-// 1- Login. Se debe validar un usuario y contraseña (por ahora
-// hardcodear en variables los datos). Si el usuario ingresa
-// correctamente las credenciales, se deberá navegar a la
-// landing page.
 
 const correoUsuario = document.getElementById('idEmail');
 const passUsuario = document.getElementById('idPass');
 const btnIngresar = document.getElementById('btnIngresar');
+
 
 const correoGuardado = "juan@gmail.com"
 const passwordGuardado = "juan1234"
@@ -71,7 +68,33 @@ btnIngresar.addEventListener('click', () => {
     ingresarLoguin()
 });
 
+// REGISTRO
+// 2- Registro de Usuario. Mediante javascript se debe validar
+// que la contraseña y el reingreso de la contraseña sean
+// iguales. Si la validación tanto del formulario (html) como
+// javascript pasa, entonces navegar a la página de login o
+// inicio de sesión.
+// const passRegistro = document.getElementById('passRegistro');
+// const reingresoPassRegistro = document.getElementById('reingresoPassRegistro');
+// const buttonRegistrarme = document.getElementById('buttonRegistrarme');
 
+// const passRegistrado = passRegistro.value
+// const reingresoPassRegistrado = reingresoPassRegistro.value
+
+// const registroUsuario = () => {
+//     if (passRegistrado === reingresoPassRegistrado) {
+//         alert('Usuario creado correctamente')
+//         window.location.href = "./index.html"
+//     } else {
+//         alert('Contraseña mal ingresada. Intente nuevamente.')
+//     }
+// };
+
+// buttonRegistrarme.addEventListener('click', () => {  
+//     registroUsuario()
+//     console.log(passRegistrado)
+//     console.log(reingresoPassRegistrado)
+// });
 
 // Validación formulario de contacto
 // const btnEnviar = document.getElementById('btn-enviar');
