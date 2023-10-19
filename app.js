@@ -23,14 +23,13 @@ let lastnameGuardado = sessionStorage.getItem('lastnameGuardado');
 let emailGuardado = sessionStorage.getItem('emailGuardado');
 let passGuardado = sessionStorage.getItem('passGuardado');
 
+
 // Guardando registro de usuario en local storage
 buttonRegistrarme.addEventListener('click', () => {    
     sessionStorage.setItem('nameGuardado', nameRegistro.value);
     sessionStorage.setItem('lastnameGuardado', lastnameRegistro.value);
     sessionStorage.setItem('emailGuardado', emailRegistro.value);
     sessionStorage.setItem('passGuardado', passRegistro.value);
-    alert('Usuario registrado con éxito')
-    // mostrarUsuario()
 });
 
 
@@ -52,52 +51,55 @@ ingresarButton.addEventListener('click', () => {
 // Validación formulario de contacto
 // const btnEnviar = document.getElementById('btn-enviar');
 
-const validarFormContacto = (e) => {
-  e.preventDefault();
-//   const nombreDeUsuario = document.getElementById('usuario');
-//   const direcciónEmail = document.getElementById('email');
-  if (nameContacto.value === "") {
-    alert("Por favor, escribe tu nombre.");
-    nameContacto.focus();
-    return false;
-  }
+// const validarFormContacto = (e) => {
+//   e.preventDefault();
+// //   const nombreDeUsuario = document.getElementById('usuario');
+// //   const direcciónEmail = document.getElementById('email');
+//   if (nameContacto.value === "") {
+//     alert("Por favor, escribe tu nombre.");
+//     nameContacto.focus();
+//     return false;
+//   }
 
-  if (lastnameContacto.value === "") {
-    alert("Por favor, escribe tu apellido.");
-    lastnameContacto.focus();
-    return false;
-  }
+//   if (lastnameContacto.value === "") {
+//     alert("Por favor, escribe tu apellido.");
+//     lastnameContacto.focus();
+//     return false;
+//   }
     
-  if (emailContacto.value === "") {
-    alert("Por favor, escribe tu correo electrónico.");
-    emailContacto.focus();
-    return false;
-  }
+//   if (emailContacto.value === "") {
+//     alert("Por favor, escribe tu correo electrónico.");
+//     emailContacto.focus();
+//     return false;
+//   }
 
-  if (textareaContacto.value === "") {
-    alert("Por favor, escribe un mensaje.");
-    textareaContacto.focus();
-    return false;
-  }
+//   if (textareaContacto.value === "") {
+//     alert("Por favor, escribe un mensaje.");
+//     textareaContacto.focus();
+//     return false;
+//   }
 
-  if (!emailVálido(emailContacto.value)) {
-    alert("Por favor, escribe un correo electrónico válido");
-    emailContacto.focus();
-    return false;
-  }
+//   if (!emailVálido(emailContacto.value)) {
+//     alert("Por favor, escribe un correo electrónico válido");
+//     emailContacto.focus();
+//     return false;
+//   }
   
-  return true; //Se pueden enviar los datos del formulario al servidor
-}
+//   return true; //Se pueden enviar los datos del formulario al servidor
+// }
 
-const emailVálido = emailContacto => {
-  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailContacto);
-}
+// const emailVálido = emailContacto => {
+//   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailContacto);
+// }
 
-// btnFormulario.addEventListener('click', validarFormContacto);
-btnFormulario.addEventListener('click', () => {    
-    alert('validacion')
-    validarFormContacto()
-});
+// // btnFormulario.addEventListener('click', validarFormContacto);
+// btnFormulario.addEventListener('click', () => {    
+//     alert('validacion')
+//     validarFormContacto()
+// });
+
+
+  
 
 // Formularios login y registro con sus respectivas validaciones y
 // mensajes personalizados al usuario. Ej. validar por tipos de inputs

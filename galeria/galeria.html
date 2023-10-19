@@ -189,18 +189,17 @@
             </div>
             <div class="modal-body">
                 <form>
-                    <div class="mb-3">
-                        <label for="idE" class="form-label">Correo</label>
-                        <input type="email" class="form-control" id="idE"
-                        aria-describedby="idEH">
-                        <div id="idEH" class="form-text">Debe ser un correo válido.</div>
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleInputPassword1"
-                        class="form-label">Contraseña</label>
-                        <input type="password" class="form-control"
-                        id="exampleInputPassword1">
-                    </div>
+                  <div class="mb-3">
+                    <label for="idEmail" class="form-label">Correo</label>
+                    <input type="email" class="form-control" id="idEmail"
+                    aria-describedby="idEH" maxlength="30" minlength="5">
+                    <div id="idEH" class="form-text">Debe ser un correo válido.</div>
+                  </div>
+                  <div class="mb-3">
+                      <label for="idPass"
+                      class="form-label">Contraseña</label>
+                      <input type="password" class="form-control" id="idPass" maxlength="12" minlength="5" >
+                  </div>
                     <div class="mb-3 form-check">
                         <input type="checkbox" class="form-check-input"
                         id="exampleCheck1">
